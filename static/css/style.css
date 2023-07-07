@@ -106,14 +106,14 @@ textarea {
     align-items: center;
     justify-content: center;
     background: url("./img/scgoogle.png") center center no-repeat;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: alpha(opacity=20);
-    -moz-opacity: 0.2;
+    -o-filter: grayscale(100%); */
+    /* filter: alpha(opacity=20); */
+    /* -moz-opacity: 0.2;
     -khtml-opacity: 0.2;
-    opacity: 0.2;
+    opacity: 0.2; */
     cursor: pointer;
 }
 .search-logo:hover {
@@ -321,15 +321,18 @@ textarea {
     display: block;
     background: rgba(230, 247, 255, 0.96);
     color:rgba(49, 70, 89, 1);
-    font-size: 13px;
+    font-size: 10px;
     text-align: center;
     line-height: 44px;
     transition: all 0.2s;
-    border-radius: 2px;
+    border-radius: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .jj-list-link:hover {
     background: #1890FF 100%;
-    font-size: 18px;
+    /* font-size: 14px; */
     font-weight: bold;
     color: #fff;
 }
